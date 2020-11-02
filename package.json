@@ -1,0 +1,14 @@
+{
+  "name": "nullstack-currency-input",
+  "version": "1.0.0",
+  "description": "Currency Input for Nullstack",
+  "main": "src/CurrencyInput.njs",
+  "author": "Christian Mortaro",
+  "license": "ISC",
+  "devDependencies": {
+    "nullstack": "*"
+  },
+  "peerDependencies": {
+    "nullstack": "*"
+  }
+}
