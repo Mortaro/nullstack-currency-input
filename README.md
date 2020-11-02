@@ -57,25 +57,12 @@ export default Application;
 
 ## Changing the separator
 
-The default separator is a ".", but you can override it by passing a separator attribute to the input
+The default separator is a "."
+
+You can override it by passing a separator attribute to the input
 
 ```jsx
-import Nullstack from 'nullstack';
-import CurrencyInput from 'nullstack-currency-input';
-
-class Application extends Nullstack {
-
-  price = 10;
-
-  render() {
-    return (
-      <CurrencyInput bind={this.price} separator="," />
-    )
-  }
-
-}
-
-export default Application;
+<CurrencyInput bind={this.price} separator="," />
 ```
 
 
