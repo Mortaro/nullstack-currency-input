@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Currency Input for Nullstack",
   "main": "src/CurrencyInput.njs",
-  "author": "Christian Mortaro",
-  "license": "ISC",
+  "author": "Mortaro",
+  "license": "MIT",
+  "repository": "github:Mortaro/nullstack-currency-input",
   "devDependencies": {
     "nullstack": "*"
   },
