@@ -1,6 +1,6 @@
 {
   "name": "nullstack-currency-input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Currency Input for Nullstack",
   "main": "src/CurrencyInput.njs",
   "author": "Mortaro",

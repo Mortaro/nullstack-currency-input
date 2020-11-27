@@ -34,7 +34,6 @@ class CurrencyInput extends Nullstack {
         name={name}
         value={this.mask()}
         placeholder={placeholder}
-        maxlength={18}
         oninput={this.parse}
         class={klass}
         id={id}
