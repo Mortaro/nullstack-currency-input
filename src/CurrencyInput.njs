@@ -10,12 +10,38 @@ class CurrencyInput extends Nullstack {
     onchange && onchange({value});
   }
 
-  render({name, value, class: klass, separator}) {
-    let formatted = value.toFixed(2);
+  mask({value, separator}) {
+    const formatted = (value || 0).toFixed(2);
     if(separator) {
-      formated = formatted.replace('.', separator);
+      return formatted.replace('.', separator);
     }
-    return <input type="tel" name={name} value={formatted} oninput={this.parse} class={klass} />
+    return formatted;
+  }
+
+  dataset(context) {
+    return Object.keys(context).filter((key) => {
+      return key.startsWith('data');
+    }).reduce((accumulator, key) => {
+      accumulator[key] = context[key];
+      return accumulator;
+    }, {});
+  }
+
+  render({name, placeholder, class: klass, id, disabled}) {   
+    return (
+      <input
+        type="tel"
+        name={name}
+        value={this.mask()}
+        placeholder={placeholder}
+        maxlength={18}
+        oninput={this.parse}
+        class={klass}
+        id={id}
+        disabled={disabled}
+        {...this.dataset()}
+      />
+    )
   }
 
 }

@@ -65,6 +65,15 @@ You can override it by passing a separator attribute to the input
 <CurrencyInput bind={this.price} separator="," />
 ```
 
+## Customization
+
+You can customize the following attributes:
+
+- id
+- class
+- placeholder
+- disabled
+- data-*
 
 ## License
 
